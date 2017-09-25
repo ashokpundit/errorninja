@@ -1,0 +1,4 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^([a-zA-Z0-9]+)/(print\.php)$   print.php?user=$1    [NC,L]
+RewriteRule    ^([a-zA-Z0-9]+)(\.js)$   test.php?user=$1    [NC,L]
+RewriteRule    ^(dashboard)/([a-zA-Z0-9]+)/$	dashboard.php?user=$1	[NC,L]

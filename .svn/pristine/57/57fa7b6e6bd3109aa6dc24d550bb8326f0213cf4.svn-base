@@ -1,0 +1,75 @@
+<?php
+require_once 'db_config.php';
+	$array_error_text=array("Syntax error",
+			"Expected (",
+			"Missing { before function body",
+			"Missing ; after for-loop condition",
+			"Unterminated string constant",
+			"A script on this page is causing Internet Explorer to run slowly… Do you want to abort the script?",
+			"X is not an object",
+			"X is not defined",
+			"ReferenceError: COMSCORE is not defined",
+			"TypeError: $.browser is undefined",
+			"Null pointer error"
+			);
+	$array_file=array("users.js",
+			"dashboard.js",
+			"temp.js",
+			"random.js",
+			"ikhan.js",
+			"home.js",
+			"songs.js",
+			"assets.js"
+	);
+	$array_os=array(	"Windows",
+				"Mac",
+				"Linux",
+				"iPad",
+				"Android"
+				);
+	$array_browser=array(
+				"Chrome",
+				"Firefox",
+				"Safari",
+				"Netscape",
+				"Internet Explorer",
+				"Opera",
+				"Gecko"
+				);
+	$array_client=array(
+				"iKhan",
+				"Gyanie",
+				"ashokGautam"
+				);
+
+
+for($i=0;$i<=40000;$i++)
+{
+	$j=rand(0, count($array_error_text)-1);
+	$error_text=$array_error_text[$j];
+	$j=rand(0, count($array_file)-1);
+	$file=$array_file[$j];
+	$j=rand(0, count($array_browser)-1);
+	$browser=$array_browser[$j];
+	$j=rand(0, count($array_os)-1);
+	$os=$array_os[$j];
+	$j=rand(0, count($array_client)-1);
+	$client=$array_client[$j];
+	$line_no=rand(100, 110);
+	$browser_version=rand(1, 25);
+	
+	DB::insert('client_error',array(
+		'error_text'=>$error_text,
+		'stack_trace'=>'',
+		'file' =>$file,
+		'line_no'=>$line_no,
+		'clinet_id'=>$client,
+		'hostname'=>$file ,
+		'ip'=>'' ,
+		'os'=>$os ,
+		'browser'=>$browser ,
+		'browser_version'=>$browser_version ,
+		'screen_size'=>''));
+}
+print_r($_REQUEST);
+?>

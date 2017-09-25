@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Error Ninja</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body data-spy="scroll" data-target="#top-bar">
+		<!-- Header -->
+		<!--header id="top-bar">
+			<nav id="site-navigation">
+				<h1 id="site-name" class="hide-text">Error Ninja</h1>
+				<a href="#" id="menu-trigger" class="hide-text icon-menu">Main Menu</a>
+			
+				<ul class="menu nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header-->
+		<!-- Home Section -->
+		<!--section id="home" class="page plain">
+			
+			<div id="home-messages" class="carousel slide" data-interval="3000">
+			  
+			  <div class="carousel-inner">
+			    <div class="item active"><span>Worried about client side errors!</span></div>
+			    <div class="item"><span>We are Thinkers</span></div>
+			    <div class="item"><span>We Store Errors</span></div>
+			  </div>
+			  
+			  <ol class="carousel-indicators">
+			    <li data-target="#home-messages" data-slide-to="0" class="active"></li>
+			    <li data-target="#home-messages" data-slide-to="1"></li>
+			    <li data-target="#home-messages" data-slide-to="2"></li>
+			  </ol>
+			</div>
+		</section-->
+
+		<!-- About Section -->
+		<section id="about" class="page parallax">
+			<div class="row-fluid">
+
+				<div class="row">
+
+					<div class="span4 offset8">
+						<a href="login.html" class="btn btn-info">Login</a>
+                                                <a href="#contact" class="btn btn-success">Register</a>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+
+				<div class="row-fluid">
+                                    <div class="page-header">
+  <h1>Error Ninja <small> reliable partner in your fight against errors !!</small></h1>
+</div>
+					<div class="text-section">
+						<p> Why should you spend you precise time in finding and tracing errors that are hard to find. Let Error Ninja do the dirty work for you.Error Ninja is always there to capture all errors when and wherever they happen. It helps you in your fight against errors by updating you in real time and giving insights on what is more important.</p>
+						<p> Happy Coding !!!</p>
+					</div>
+				</div> <!-- end row-fluid -->
+				<!-- Services -->
+				<div class="grid">
+					<div class="row-fluid">
+						<div class="span4">
+							<h3 class="icon-thumbs-up">Integration</h3>
+							<p>Just drop 4 lines of JS on your page and its done.</p>
+						</div>
+						<div class="span4">
+							<h3 class="icon-trophy">Win</h3>
+							<p>Identify browser/platforms that are enemies to your app and win your customers !!</p>
+						</div>
+						<div class="span4">
+							<h3 class="icon-bullhorn">Reports</h3>
+							<p>We keep you updated by sending email and SMS in real time. </p>
+						</div>
+					</div> <!-- end row-fluid -->
+				</div> <!-- end grid -->
+			</div> <!-- end container -->
+		</section>
+
+		<!-- Team Section -->
+		
+
+		<!-- Clients Subsection -->
+	
+		<!-- Gallery Section -->
+		
+		<!-- Testimonials Subsection -->
+		
+		<!-- Portfolio Section -->
+		
+		<!-- Twitter Subsection -->
+		<!--
+		<section id="twitter" class="subsection parallax">
+					<div class="container">
+						<h1 class="page-title">@Twitter</h1>
+						<div id="tweets"></div>
+					</div>
+				</section>	-->
+		
+
+		<!-- Contact Section -->
+		<section id="contact" class="page parallax">
+			<div class="container">
+				<!--h1 class="page-title">Contact</h1-->
+				<h2 class="page-subtitle">Register for beta access</h2>
+				<div class="row-fluid">
+					<div class="span8 main-form">
+						<!--h3>Register for beta access.</h3-->
+						<p id="response"></p>
+						<form method="post" action="savesignupinfo.php" id="contact-form">
+							<label for="sender-name" class="hide-text">Name</label>
+							<input type="text" name="sender-name" id="sender-name" placeholder="Name" required />
+							<label for="sender-email" class="hide-text">Email</label>
+							<input type="text" name="sender-email" id="sender-email" placeholder="Email" required />
+							<label for="sender-company-name" class="hide-text">Company Name</label>
+							<input type="text" name="sender-company-name" id="sender-company-name" placeholder="Company Name" required />
+							<label for="sender-company-url" class="hide-text">Website</label>
+							<input type="text" name="sender-company-url" id="sender-company-url" placeholder="Website URL" required />
+							<label for="message" class="hide-text">Your Message</label>
+							<textarea name="message" id="message" rows="6" required placeholder="Few words to error ninja."></textarea>
+							<input type="submit" name="submit" id="submit" value="Send &raquo;" class="btn btn-info" />
+						</form>
+					</div> <!-- end main-form -->
+					<div class="span4 sidebar">
+                                            <div class="row-fluid">
+                                             <form class="form-signin" action="dashboard1.php" method="post">
+                                                 
+                                                <h2 class="form-signin-heading">Please sign in</h2>
+                                                <input type="text" class="input-block-level" placeholder="Email address" name="email">
+                                                <input type="password" class="input-block-level" placeholder="Password" name="password">
+                                                <label class="checkbox">
+                                                  <input type="checkbox" value="remember-me"> Remember me
+                                                </label>
+                                                <button class="btn btn-large btn-success" type="submit">Sign in</button>
+                                              </form>
+                                            </div>
+                                            <div class="row-fluid">
+                                             <h3>Contact Info</h3>
+						<ul class="info-list">
+	            
+                                                <li class="icon-phone">+918750734483</li>
+                                                <li class="icon-envelope">en@errorninja.com</li>
+                                              </ul>
+                                             </div>
+	          <!--
+			  <h3>Social Media</h3>
+							<ul class="icons-list">
+							  <li><a href="#" title="Facebook" class="icon-facebook">Facebook</a></li>
+							  <li><a href="#" title="Twitter" class="icon-twitter">Twitter</a></li>
+							  <li><a href="#" title="Google Plus" class="icon-google-plus">Google Plus</a></li>
+							  <li><a href="#" title="LinkedIn" class="icon-linkedin">LinkedIn</a></li>
+							  <li><a href="#" title="Pinterest" class="icon-pinterest">Pinterest</a></li>
+							</ul>-->
+			  
+					</div> <!-- end sidebar -->
+				</div> <!-- end row-fluid -->
+			</div> <!-- end container -->
+		</section>
+
+		<!-- Footer -->
+		<footer id="main-footer">
+			<p>&copy; 2013 Error Ninja </p>
+		</footer>
+		
+		<!-- Preloader -->
+		<div id="preloader"></div>
+		
+		<!-- Plugins & Scripts -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery.min.js" type="text/javascript"><\/script>')</script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+		<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+		<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+		<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			//Twitter feed
+		 /*
+		  $('#tweets').tweet({
+					   modpath: 'twitter/index.php',
+					 username: 'twitter', // Enter Twitter Username Here
+					 count: 1,
+					 template: [
+							 '{text}{time}'
+						 ].join( '' ), 
+					 loading_text: "loading tweets..."
+				   });*/
+		 
+	  </script>
+	 
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<?php
+require_once 'db_config.php';
+$i=0;
+$browser = get_browser(null, true);
+print_r($browser);
+for(;array_key_exists('message'.$i,$_REQUEST);$i++)
+{
+	if(isset($_REQUEST['message'.$i]) && strlen($_REQUEST['message'.$i])>1)
+	DB::insert('client_error',array(
+		'error_text'=>$_REQUEST['message'.$i],
+		'stack_trace'=>'',
+		'file' =>$_REQUEST['page'.$i],
+		'line_no'=>$_REQUEST['line'.$i],
+		'clinet_id'=>$_REQUEST['user'],
+		'hostname'=>$_REQUEST['url'.$i] ,
+		'ip'=>$_SERVER['REMOTE_ADDR'] ,
+		'os'=>$_REQUEST['os'.$i] ,
+		'browser'=>$_REQUEST['browser'.$i] ,
+		'browser_version'=>$_REQUEST['version'.$i] ,
+		'screen_size'=>''));
+}
+print_r($_REQUEST);
+?>
